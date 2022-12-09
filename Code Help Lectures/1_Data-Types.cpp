@@ -43,5 +43,23 @@ int main() {
     cout << "size of double-data-type : \t" << size_d << endl;
 }
 
+/*
 
+The various Data-Types :- 
+
+the value of a (int-data type) :        123
+the value of b (char-data-type) :       y
+the value of c (bool-data-type) :       0
+the value of f (float-data-type) :      1.234
+the value of d (double-data-type) :     1.234
+
+Now the values of the data-types :-
+
+size of int-data-type :         4
+size of char-data-type :        1
+size of bool-data-type :        1
+size of float-data-type :       4
+size of double-data-type :      8
+
+*/
 
