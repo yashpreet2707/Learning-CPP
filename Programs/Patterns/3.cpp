@@ -1,34 +1,34 @@
 
 //          Pattern -11
 
-// #include <iostream>
-// using namespace std;
-// int main() {
-//     int n;
-//     cout << "Enter number of rows less than or equal to 26 : " ; cin >> n;
+#include <iostream>
+using namespace std;
+int main() {
+    int n;
+    cout << "Enter number of rows less than or equal to 26 : " ; cin >> n;
 
-//     int row = 1 ;
-//     char ch = 65;
-
-
-//     if ( n>=1 && n<=26) {
-
-//         while ( row <= n ) {
-
-//         cout << ch << " " << ch << " " << ch ;
-//         ch = ch + 1 ;
-//         cout << endl;
-//         row = row + 1 ;
-
-//         }
-//     }
-
-//     else {
-//         cout << "WTF ! I told you not to  :-)";
-//     }
+    int row = 1 ;
+    char ch = 65;
 
 
-// }
+    if ( n>=1 && n<=26) {
+
+        while ( row <= n ) {
+
+        cout << ch << " " << ch << " " << ch ;
+        ch = ch + 1 ;
+        cout << endl;
+        row = row + 1 ;
+
+        }
+    }
+
+    else {
+        cout << "WTF ! I told you not to  :-)";
+    }
+
+
+}
 
 /*
 
@@ -49,30 +49,30 @@ J J J
 
 //      Pattern -11 (alternative)
 
-// #include <iostream>
-// using namespace std;
-// int main() {
+#include <iostream>
+using namespace std;
+int main() {
 
-//     int n ;
+    int n ;
 
-//     cout << "Enter the number : " ; cin >> n ;
+    cout << "Enter the number : " ; cin >> n ;
 
-//     int row = 1 ;
+    int row = 1 ;
 
-//     while ( row <= n ) {
+    while ( row <= n ) {
 
-//         int col = 1 ;
+        int col = 1 ;
         
-//         while ( col <= n ) {
+        while ( col <= n ) {
 
-//             char ch = 'A' + row - 1 ; 
-//             cout << ch << " ";
-//             col = col + 1 ;
-//         }
-//         cout << endl;
-//         row = row + 1 ;
-//     }
-// }
+            char ch = 'A' + row - 1 ; 
+            cout << ch << " ";
+            col = col + 1 ;
+        }
+        cout << endl;
+        row = row + 1 ;
+    }
+}
 
 /*
 
@@ -90,30 +90,30 @@ E E E E E
 
 
 
-// #include <iostream>
-// using namespace std;
-// int main() {
-//     int n ;
-//     cout << "Enter the value of n : " ; cin >> n;
+#include <iostream>
+using namespace std;
+int main() {
+    int n ;
+    cout << "Enter the value of n : " ; cin >> n;
 
-//     int row = 1 ;
+    int row = 1 ;
 
-//     while ( row <= n ) {
+    while ( row <= n ) {
 
-//         int col = 1 ;
+        int col = 1 ;
 
-//         while ( col <= n ) {
+        while ( col <= n ) {
 
-//             char ch = 'A' + col - 1 ;
+            char ch = 'A' + col - 1 ;
 
-//             cout << ch << " ";
+            cout << ch << " ";
 
-//             col = col + 1 ;
-//         }
-//         cout << endl; 
-//         row = row + 1 ;
-//     } 
-// }
+            col = col + 1 ;
+        }
+        cout << endl; 
+        row = row + 1 ;
+    } 
+}
 
 /*
 
@@ -129,32 +129,32 @@ A B C D E
 
 //          Pattern -13
 
-// #include <iostream>
-// using namespace std;
-// int main() {
-//     int n ; 
-//     cout << "Enter the value of n : " ; cin >> n ;
+#include <iostream>
+using namespace std;
+int main() {
+    int n ; 
+    cout << "Enter the value of n : " ; cin >> n ;
 
-//     int row = 1;
-//     int i = 0;
+    int row = 1;
+    int i = 0;
 
-//     while ( row <= n ) {
+    while ( row <= n ) {
 
-//         int col = 1;
+        int col = 1;
         
-//         while ( col <= n ) {
+        while ( col <= n ) {
 
-//             char ch = 'A' + i ;
+            char ch = 'A' + i ;
 
-//             cout << ch << " ";
+            cout << ch << " ";
             
-//             i = i + 1 ;
-//             col = col + 1 ;
-//         }
-//         cout << endl;
-//         row = row + 1 ;
-//     }
-// }
+            i = i + 1 ;
+            col = col + 1 ;
+        }
+        cout << endl;
+        row = row + 1 ;
+    }
+}
 
 /*
 
@@ -178,5 +178,79 @@ int main() {
     int n ;
     cout << "Enter the value of n : " ; cin >> n ;
 
-    
+    int row = 1 ;
+
+    while ( row <= n ) {
+
+
+        int col = 1 ;
+        int i = 0 ;
+
+
+        while ( col <= n ) {
+
+            char ch = 'A' + row - 1 + i ;
+
+            cout << ch << " " ;
+
+            i = i + 1 ;
+            col = col + 1 ;
+        }
+        cout << endl;
+        row = row + 1 ;
+    }
 }
+
+/*
+
+Enter the value of n : 5
+A B C D E 
+B C D E F 
+C D E F G 
+D E F G H 
+E F G H I 
+
+*/
+
+
+
+//          Pattern -14 (alternative)
+
+
+#include <iostream>
+using namespace std;
+int main() {
+    int n ;
+    cout << "Enter the value of n : " ; cin >> n ;
+
+    int row = 1 ;
+    
+    while ( row <= n ) {
+
+        int col = 1 ;
+
+        while ( col <= n ) {
+
+            char ch = 'A' + row + col - 2 ;
+
+            cout << ch << " " ;
+            col = col + 1 ;
+        }
+        cout << endl;
+        row = row + 1 ;
+    }
+}
+
+/*
+
+Enter the value of n : 5
+A B C D E 
+B C D E F 
+C D E F G 
+D E F G H 
+E F G H I 
+
+*/
+
+
+
